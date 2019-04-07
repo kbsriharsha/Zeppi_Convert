@@ -10,7 +10,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as readme_file:
 
 setup(
     name = 'Zeppi_Convert',
-    version = '0.1.0',
+    version = '0.1.1',
     description="Convert your zeppelin notebooks to python",
     long_description=readme,
     author = "Harsha Karpurapu",
