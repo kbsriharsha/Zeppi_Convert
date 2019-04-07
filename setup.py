@@ -15,15 +15,14 @@ setup(
     long_description=readme
     author="Harsha Karpurapu",
     author_email='kbsriharsha@gmail.com',
-    packages = find_packages(exclude=['contrib', 'docs', 'tests']),
+    url='https://github.com/kbsriharsha/Zeppi_Convert',
+    packages = find_packages(exclude=['contrib']),
     license="MIT",
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
