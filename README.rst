@@ -10,23 +10,30 @@ Zeppi_Convert
 
 
 
-Zeppi_Convert is a python library which convert the zeppelin notebooks to python or any other format
+Zeppi_Convert is a python library which can convert the zeppelin notebooks to python or any other formats. It has the built in capability to extract the code from different kind of interpreter cells.
 
-* Free software: MIT license
+Zeppi_Convert got three arguments,
 
-## Usage
+* i : input file to be converted(required)
+* o : output file to be returned(optional)(default: outputs a zeppiconvert.txt file)
+* int : specific interpreter cells to be converted (optional) (deafult: extracts the code from all the cells)
+
+Usage
+======================
+
 
 From the command line, use Zeppi_Convert to convert a zeppelin notebook (.json) to any other format output format
 
-    $ Zeppi_Convert -i <input_filename> -o <output_filename>
+    ``$ Zeppi_Convert -i <input_filename> -o <output_filename> -int <interpreter_type>``
 
-where `<output format>` is the desired output format and `<input notebook>` is the
-filename of the Jupyter notebook.
+Example1: Extract the code from all the cells and output a python file
 
-### Example: Convert a zeppelin notebook to python file
+    ``$ Zeppi_Convert -i mynotebook.json -o mypython.py``
 
-Convert Juptyer notebook file, `mynotebook.ipynb`, to HTML using:
+Example2: Convert a zeppelin notebook to any text format
 
-    $ Zeppi_Convert -i mynotebook.json -o mypython.py
+    ``$ Zeppi_Convert -i mynotebook.json -o myfile.txt``
 
-This command takes an input zeppelin notebook and return a python file
+Example3: Extract the code from a specific interpreter cells
+
+    ``$ Zeppi_Convert -i mynotebook.json -o myfile.txt -int pyspark``
