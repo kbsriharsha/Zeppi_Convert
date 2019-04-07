@@ -1,9 +1,18 @@
 from setuptools import setup, find_packages
+from codecs import open
+from os import path
+
+here = path.abspath(path.dirname(__file__))
+
+
+with open(path.join(here, 'README.rst'), encoding='utf-8') as readme_file:
+    readme = readme_file.read()
 
 setup(
     name = 'Zeppi_Convert',
     version = '0.1.0',
     description="Convert your zeppelin notebooks to python",
+    long_description=readme
     author="Harsha Karpurapu",
     author_email='kbsriharsha@gmail.com',
     packages = find_packages(exclude=['contrib', 'docs', 'tests']),
