@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: Zeppi-Convert
+Version: 0.1.0
+Summary: Convert your zeppelin notebooks to python
+Home-page: https://github.com/kbsriharsha/Zeppi_Convert
+Author: Harsha Karpurapu
+Author-email: kbsriharsha@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: ===============================
+        Zeppi_Convert
+        ===============================
+        
+        .. image:: https://img.shields.io/travis/kbsriharsha/Zeppi_Convert.svg
+                :target: https://travis-ci.org/kbsriharsha/Zeppi_Convert
+        
+        .. image:: https://img.shields.io/pypi/v/Zeppi_Convert.svg
+                :target: https://pypi.python.org/pypi/Zeppi_Convert
+        
+        
+        Convert your zeppelin notebooks to python
+        
+        * Free software: MIT license
+        * Documentation: (COMING SOON!) https://Zeppi_Convert.readthedocs.org.
+        
+        Features
+        --------
+        
+        * TODO
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

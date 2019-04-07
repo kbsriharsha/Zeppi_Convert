@@ -12,8 +12,8 @@ setup(
     name = 'Zeppi_Convert',
     version = '0.1.0',
     description="Convert your zeppelin notebooks to python",
-    long_description=readme
-    author="Harsha Karpurapu",
+    long_description=readme,
+    author = "Harsha Karpurapu",
     author_email='kbsriharsha@gmail.com',
     url='https://github.com/kbsriharsha/Zeppi_Convert',
     packages = find_packages(exclude=['contrib']),
