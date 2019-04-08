@@ -84,7 +84,6 @@ def main():
 
     try:
         zeppi_ntbk = json.load(codecs.open(args.in_file, 'r', 'utf-8-sig'))
-        print("I am passed 1")
     except ValueError:
         print('ERROR: Invalid JSON')
         sys.exit(1)

@@ -32,6 +32,6 @@ setup(
     ],
     entry_points = {
         'console_scripts': [
-            'Zeppi_Convert = Zeppi_Convert.__main__:main'
+            'zeppi-convert = Zeppi_Convert.__main__:main'
         ]
     })

@@ -22,18 +22,18 @@ Usage
 ======================
 
 
-From the command line, use Zeppi_Convert to convert a zeppelin notebook (.json) to any other format output format
+From the command line, use the keyword ``zeppi-convert`` to convert a zeppelin notebook (.json) to any other format output format
 
-    ``$ Zeppi_Convert -i <input_filename> -o <output_filename> -int <interpreter_type>``
+    ``$ zeppi-convert -i <input_filename> -o <output_filename> -int <interpreter_type>``
 
 Example1: Extract the code from all the cells and output a python file
 
-    ``$ Zeppi_Convert -i mynotebook.json -o mypython.py``
+    ``$ zeppi_convert -i mynotebook.json -o mypython.py``
 
 Example2: Convert a zeppelin notebook to any text format
 
-    ``$ Zeppi_Convert -i mynotebook.json -o myfile.txt``
+    ``$ zeppi_convert -i mynotebook.json -o myfile.txt``
 
 Example3: Extract the code from a specific interpreter cells
 
-    ``$ Zeppi_Convert -i mynotebook.json -o myfile.txt -int pyspark``
+    ``$ zeppi_convert -i mynotebook.json -o myfile.txt -int pyspark``
