@@ -35,7 +35,7 @@ def zeppi_int(zeppi_ntbk, interpreter):
             pgm = i["text"].splitlines()
             try:
                 ident = pgm[0][1:]
-            exception IndexError:
+            except IndexError:
                 print("Exception: Empty Cell!")
             code = pgm[1:]
             if ((ident == interpreter) and (len(code) > 0)):
