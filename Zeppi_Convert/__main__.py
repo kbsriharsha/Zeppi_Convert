@@ -10,7 +10,10 @@ def zeppi_all(zeppi_ntbk):
     try:
         for i in zeppi_ntbk['paragraphs']:
             pgm = i["text"].splitlines()
-            ident = pgm[0]
+            try:
+                ident = pgm[0]
+            except IndexError:
+                print("Exception: Empty Cell!")
             code = pgm[1:]
             if ('%' in ident):
                 pgm = '\n'.join(code)
@@ -30,7 +33,10 @@ def zeppi_int(zeppi_ntbk, interpreter):
     try:
         for i in zeppi_ntbk['paragraphs']:
             pgm = i["text"].splitlines()
-            ident = pgm[0][1:]
+            try:
+                ident = pgm[0][1:]
+            exception IndexError:
+                print("Exception: Empty Cell!")
             code = pgm[1:]
             if ((ident == interpreter) and (len(code) > 0)):
                 code = '\n'.join(code)
