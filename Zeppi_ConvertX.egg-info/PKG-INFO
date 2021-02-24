@@ -1,21 +1,20 @@
 Metadata-Version: 1.1
-Name: Zeppi-Convert
-Version: 0.1.1
+Name: Zeppi-ConvertX
+Version: 0.1.5
 Summary: Convert your zeppelin notebooks to python
-Home-page: https://github.com/kbsriharsha/Zeppi_Convert
+Home-page: https://github.com/mecsys/Zeppi_ConvertX
 Author: Harsha Karpurapu
 Author-email: kbsriharsha@gmail.com
 License: MIT
-Description-Content-Type: UNKNOWN
 Description: ===============================
         Zeppi_Convert
         ===============================
         
-        .. image:: https://img.shields.io/travis/kbsriharsha/Zeppi_Convert.svg
-                :target: https://travis-ci.org/kbsriharsha/Zeppi_Convert
+        .. image:: https://img.shields.io/travis/mecsys/Zeppi_ConvertX.svg
+                :target: https://travis-ci.org/mecsys/Zeppi_ConvertX
         
-        .. image:: https://img.shields.io/pypi/v/Zeppi_Convert.svg
-                :target: https://pypi.python.org/pypi/Zeppi_Convert
+        .. image:: https://img.shields.io/pypi/v/Zeppi_ConvertX.svg
+                :target: https://pypi.python.org/pypi/Zeppi_ConvertX
         
         
         
@@ -31,21 +30,21 @@ Description: ===============================
         ======================
         
         
-        From the command line, use Zeppi_Convert to convert a zeppelin notebook (.json) to any other format output format
+        From the command line, use the keyword ``zeppi-convert`` to convert a zeppelin notebook (.json) to any other format output format
         
-            ``$ Zeppi_Convert -i <input_filename> -o <output_filename> -int <interpreter_type>``
+            ``$ zeppi-convert -i <input_filename> -o <output_filename> -int <interpreter_type>``
         
         Example1: Extract the code from all the cells and output a python file
         
-            ``$ Zeppi_Convert -i mynotebook.json -o mypython.py``
+            ``$ zeppi_convert -i mynotebook.json -o mypython.py``
         
         Example2: Convert a zeppelin notebook to any text format
         
-            ``$ Zeppi_Convert -i mynotebook.json -o myfile.txt``
+            ``$ zeppi_convert -i mynotebook.json -o myfile.txt``
         
         Example3: Extract the code from a specific interpreter cells
         
-            ``$ Zeppi_Convert -i mynotebook.json -o myfile.txt -int pyspark``
+            ``$ zeppi_convert -i mynotebook.json -o myfile.txt -int pyspark``
         
 Keywords: zeppelin convert to python notebooks interpreter
 Platform: UNKNOWN
