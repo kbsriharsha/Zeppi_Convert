@@ -1,0 +1,3 @@
+[console_scripts]
+zeppi-convert = Zeppi_Convert.__main__:main
+

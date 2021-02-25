@@ -2,11 +2,11 @@
 Zeppi_Convert
 ===============================
 
-.. image:: https://img.shields.io/travis/kbsriharsha/Zeppi_Convert.svg
-        :target: https://travis-ci.org/kbsriharsha/Zeppi_Convert
+.. image:: https://img.shields.io/travis/mecsys/Zeppi_ConvertX.svg
+        :target: https://travis-ci.org/mecsys/Zeppi_ConvertX
 
-.. image:: https://img.shields.io/pypi/v/Zeppi_Convert.svg
-        :target: https://pypi.python.org/pypi/Zeppi_Convert
+.. image:: https://img.shields.io/pypi/v/Zeppi_ConvertX.svg
+        :target: https://pypi.python.org/pypi/Zeppi_ConvertX
 
 
 
