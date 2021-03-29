@@ -8,6 +8,7 @@ import codecs
 def zeppi_all(zeppi_ntbk):
     py_scrt = []
     pgm = []
+    ident = ""
     try:
         for i in zeppi_ntbk['paragraphs']:
             try:
@@ -35,6 +36,7 @@ def zeppi_all(zeppi_ntbk):
 def zeppi_int(zeppi_ntbk, interpreter):
     int_scrt = []
     pgm = []
+    ident = ""
     try:
         for i in zeppi_ntbk['paragraphs']:
             try:
