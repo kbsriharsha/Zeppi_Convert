@@ -9,7 +9,10 @@ def zeppi_all(zeppi_ntbk):
     py_scrt = []
     try:
         for i in zeppi_ntbk['paragraphs']:
-            pgm = i["text"].splitlines()
+            try:
+                pgm = i["text"].splitlines()
+            except KeyError:
+                print("Exception: Empty Paragraph!")
             try:
                 ident = pgm[0]
             except IndexError:
@@ -32,7 +35,10 @@ def zeppi_int(zeppi_ntbk, interpreter):
     int_scrt = []
     try:
         for i in zeppi_ntbk['paragraphs']:
-            pgm = i["text"].splitlines()
+            try:
+                pgm = i["text"].splitlines()
+            except KeyError:
+                print("Exception: Empty Paragraph!")
             try:
                 ident = pgm[0][1:]
             except IndexError:
@@ -107,11 +113,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-'''
-args = sys.argv[1:]
-print('count of args :: {}'.format(len(args)))
-for arg in args:
-    print('passed argument :: {}'.format(arg))
-'''
