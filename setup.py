@@ -9,14 +9,14 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as readme_file:
     readme = readme_file.read()
 
 setup(
-    name = 'Zeppi_Convert',
-    version = '0.1.2',
+    name = 'Zeppi_ConvertX',
+    version = '0.1.8',
     keywords="zeppelin convert to python notebooks interpreter",
     description="Convert your zeppelin notebooks to python",
     long_description=readme,
     author = "Harsha Karpurapu",
     author_email='kbsriharsha@gmail.com',
-    url='https://github.com/kbsriharsha/Zeppi_Convert',
+    url='https://github.com/mecsys/Zeppi_ConvertX',
     packages = find_packages(exclude=['contrib']),
     license="MIT",
     classifiers=[
@@ -32,6 +32,6 @@ setup(
     ],
     entry_points = {
         'console_scripts': [
-            'zeppi-convert = Zeppi_Convert.__main__:main'
+            'zeppi-convert = Zeppi_ConvertX.__main__:main'
         ]
     })

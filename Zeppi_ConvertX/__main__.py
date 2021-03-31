@@ -7,10 +7,18 @@ import codecs
 # parser for general
 def zeppi_all(zeppi_ntbk):
     py_scrt = []
+    pgm = []
+    ident = ""
     try:
         for i in zeppi_ntbk['paragraphs']:
-            pgm = i["text"].splitlines()
-            ident = pgm[0]
+            try:
+                pgm = i["text"].splitlines()
+            except KeyError:
+                print("Exception: Empty Paragraph!")
+            try:
+                ident = pgm[0]
+            except IndexError:
+                print("Exception: Empty Cell!")
             code = pgm[1:]
             if ('%' in ident):
                 pgm = '\n'.join(code)
@@ -27,10 +35,18 @@ def zeppi_all(zeppi_ntbk):
 # parser for interpreter specific
 def zeppi_int(zeppi_ntbk, interpreter):
     int_scrt = []
+    pgm = []
+    ident = ""
     try:
         for i in zeppi_ntbk['paragraphs']:
-            pgm = i["text"].splitlines()
-            ident = pgm[0][1:]
+            try:
+                pgm = i["text"].splitlines()
+            except KeyError:
+                print("Exception: Empty Paragraph!")
+            try:
+                ident = pgm[0][1:]
+            except IndexError:
+                print("Exception: Empty Cell!")
             code = pgm[1:]
             if ((ident == interpreter) and (len(code) > 0)):
                 code = '\n'.join(code)
@@ -101,11 +117,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-'''
-args = sys.argv[1:]
-print('count of args :: {}'.format(len(args)))
-for arg in args:
-    print('passed argument :: {}'.format(arg))
-'''
